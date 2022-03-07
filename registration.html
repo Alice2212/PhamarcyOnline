@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <link rel="stylesheet" type="text/css" href="registration.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <!-- section for sign In -->
+        <div class="form signIn">
+          <div class="wrapper">
+            <form action="">
+              <h1>Sign In</h1>
+              <input type="email" placeholder="abcd@gmail.com" name="email" />
+              <input type="password" placeholder="password" name="password" />
+              <button type="submit">Sign In</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- section for sign Up -->
+        <div class="form signUp">
+          <div class="wrapper">
+            <form action="">
+              <h1>Sign Up</h1>
+              <input type="text" placeholder="name" name="name" />
+              <input type="email" placeholder="abcd@gmail.com" name="email" />
+              <input type="tel" placeholder="Phone Number" name="phoneNumber" />
+              <input type="text" placeholder="Address" name="address" />
+
+              <!-- <p>Kindly Select your gender</p>  
+                            Male <input type="radio" name="gender" value="male" >
+                            Female <input type="radio" name="gender" value="female">   -->
+              <label for="gender" style="margin-left: -2%">Gender</label>
+              <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+
+              <input type="password" placeholder="password" name="password" />
+              <button type="submit">Sign In</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Section for Overlay -->
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-left">
+              <button id="signInButton">Log In</button>
+            </div>
+
+            <div class="overlay-right">
+              <button id="signUpButton">Create Account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
